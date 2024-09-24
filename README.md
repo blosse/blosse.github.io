@@ -1,1 +1,3 @@
 # blosse.github.io
+Resume webpage for Titus Blosse, software engineer from Sweden.
+The webpage is very much work in progress...
