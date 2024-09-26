@@ -6,7 +6,7 @@
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 nav {
-    height: 120px;
+    height: 140px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -25,13 +25,13 @@ nav a:hover {
 .avatar {
     display: flex;
     color: black;
-    font-size: 2.5rem;
+    font-size: 3rem;
     font-style: italic;
     align-items: center;
 }
 .circular-image {
-    hight: 120px;
-    width: 120px;
+    hight: 140px;
+    width: 140px;
     border-radius: 50%;
     margin-right: 10px;
 }
@@ -43,45 +43,10 @@ nav a:hover {
 .name-container p {
     margin 0;
 }
-
-.logo:hover {
-    color: white;
-}
-.hero {
-    background: white;
-}
-.hero-container {
+.experience-container {
     display: grid;
-    grid-template-columns: 1fr;
-    height: 95vh;
-    padding: 3rem calc((100vw - 1300px) / 2);
-}
-.hero-image {
-    height: 100%;
-    width: 100%;
-}
-.column-left {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    color: #000;
-    padding: 0rem 2rem;
-}
-.column-left h1 {
-    margin-bottom: 1rem;
-    font-size: 2rem;
-}
-.column-left p {
-    margin-bottom: 2rem;
-    font-size: 1.5rem;
-    line-height: 1.5;
-}
-.column-right {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0rem 2rem;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 50px;
 }
 button {
     padding: 1rem 3rem;
