@@ -2,33 +2,48 @@
     box-sizing: border-box;
     margin: 0;
     border: 0;
-    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-        "Lucida Sans", Arial, sans-serif;
     text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 nav {
-    height: 80px;
-    background: darkseagreen;
+    height: 120px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0rem calc((100vw - 1300px) / 2);
+    margin: 10px;
+
 }
 nav a {
     text-decoration: none;
     color: black;
-    padding: 0 1.5rem;
+    padding: 0 2rem;
+    font-style: italic;
 }
 nav a:hover {
-    color: white;
+    color: darkgray;
 }
-.logo {
+.avatar {
+    display: flex;
     color: black;
-    font-size: 1.5rem;
-    font-weight: bold;
+    font-size: 2.5rem;
     font-style: italic;
-    padding: 0 2rem;
+    align-items: center;
 }
+.circular-image {
+    hight: 120px;
+    width: 120px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.name-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.name-container p {
+    margin 0;
+}
+
 .logo:hover {
     color: white;
 }
@@ -37,7 +52,7 @@ nav a:hover {
 }
 .hero-container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     height: 95vh;
     padding: 3rem calc((100vw - 1300px) / 2);
 }
