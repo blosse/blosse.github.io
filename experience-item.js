@@ -3,9 +3,9 @@ class Experience {
   constructor(
     company,
     location,
+    title,
     start_date,
     end_date,
-    title,
     description = [],
   ) {
     this.company = company;
@@ -72,7 +72,7 @@ class Experience {
 const education = [
   new Experience(
     "Chalmers University of Technology",
-    "Gothenburg, Sweden",
+    "Gothenburg",
     "Master's Degree in High Performance Computer Systems",
     "September 2022",
     "June 2024",
@@ -84,7 +84,7 @@ const education = [
   ),
   new Experience(
     "Chalmers University of Technology",
-    "Gothenburg, Sweden",
+    "Gothenburg",
     "Bachelor's Degree in Computer Science",
     "September 2019",
     "June 2022",
