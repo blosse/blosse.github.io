@@ -53,7 +53,6 @@ class Experience {
       descriptionList.appendChild(bullet);
     });
     descriptionField.appendChild(descriptionList);
-    // REMOVE THIS COMMENT
 
     // Start and end date
     const dateField = document.createElement("div");
