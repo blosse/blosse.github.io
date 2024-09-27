@@ -48,6 +48,32 @@ nav a:hover {
     grid-template-columns: 1fr 1fr;
     padding-top: 50px;
 }
+.experience-item {
+    display: grid;
+    flex-direction: column;
+    text-align: left;
+    padding: 10px;
+    margin: 5px 0;
+}
+.experience-item .company-row {
+    display: flex;
+    margin-bottom: 5px;
+}
+.experience-company {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+.experience-location {
+    font-size: 1.2rem;
+}
+.experience-title {
+   font-style: italic;
+   font-size: 1.3rem;
+}
+.experience-date {
+    font-size: 1rem;
+}
+
 button {
     padding: 1rem 3rem;
     font-size: 1rem;
