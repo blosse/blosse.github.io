@@ -49,11 +49,19 @@ nav a:hover {
     padding-top: 50px;
 }
 .experience-item {
-    display: grid;
     flex-direction: column;
-    text-align: left;
+    // align-items: left;
+    // text-align: left;
+    list-style: none;
+    line-height: 1.6rem;
     padding: 10px;
     margin: 5px 0;
+}
+.experience-description {
+    list-style: disc;
+    list-style-position: inside;
+    line-height: 1.2rem;
+    text-align: left;
 }
 .experience-item .company-row {
     display: flex;
