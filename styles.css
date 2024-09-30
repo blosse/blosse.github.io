@@ -48,15 +48,30 @@ nav a:hover {
     grid-template-columns: 1fr 1fr;
     padding-top: 50px;
 }
-button {
-    padding: 1rem 3rem;
-    font-size: 1rem;
-    border: none;
-    color: black;
-    background: darkseagreen;
-    cursor: pointer;
-    border-radius: 50px;
+.experience-list {
+    padding-inline-start: 0px;
+    list-style: none;
 }
-button:hover {
-    color: white;
+.experience-item {
+    flex-direction: column;
+    line-height: 1.6rem;
+    margin: 20px;
+    cursor: pointer;
+}
+.experience-description-list {
+    padding: 10px;
+    list-style: disc;
+    list-style-position: inside;
+    line-height: 1.2rem;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+.experience-description-list.show {
+    max-height: 500px;
+    opacity: 1;
+}
+.experience-description-item {
+    padding: 5px;
 }
