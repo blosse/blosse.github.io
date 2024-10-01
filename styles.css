@@ -59,7 +59,8 @@ nav a:hover {
     cursor: pointer;
 }
 .experience-description-list {
-    padding: 10px;
+    padding-right: 20px;
+    padding-top: 10px;
     list-style: disc;
     list-style-position: inside;
     line-height: 1.2rem;
