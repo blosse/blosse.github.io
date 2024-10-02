@@ -175,7 +175,6 @@ work.forEach((item) => {
   if (numWorkItems > 2) {
     experienceItem.style.maxHeight = "0px";
     experienceItem.style.opacity = "0%";
-    experienceItem.style.margin = "0px";
   }
   numWorkItems++;
   workList.appendChild(experienceItem);
@@ -192,7 +191,6 @@ expandWorkButton.addEventListener("click", function () {
     for (var i = 0; i < workListArray.length; i++) {
       workListArray[i].style.maxHeight = "300px";
       workListArray[i].style.opacity = "100%";
-      workListArray[i].style.margin = "20px";
     }
   } else {
     // Less
@@ -200,10 +198,9 @@ expandWorkButton.addEventListener("click", function () {
     for (var i = workListArray.length - 1; i > 2; i--) {
       workListArray[i].style.maxHeight = "0px";
       workListArray[i].style.opacity = "0%";
-      workListArray[i].style.margin = "0px";
     }
   }
 });
 
-document.getElementById("education-container").appendChild(educationList);
-document.getElementById("work-container").appendChild(workList);
+document.getElementById("education-item-container").appendChild(educationList);
+document.getElementById("work-item-container").appendChild(workList);

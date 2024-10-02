@@ -70,38 +70,46 @@ nav a:hover {
     padding-top: 50px;
     padding-bottom: 50px;
 }
+.work-container {
+    line-height: 4rem;
+}
+.education-container {
+    line-height: 4rem;
+}
 .experience-list {
+    display: flex;
+    flex-direction: column;
     padding-inline-start: 0px;
+    line-height: 2;
     list-style: none;
+}
+.experience-item-heading {
 }
 .experience-item-heading:hover {
     opacity: 65%;
 }
 .education-experience-item {
+    display: flex;
     flex-direction: column;
-    line-height: 1.6rem;
-    margin: 20px;
     cursor: pointer;
 }
 .work-experience-item {
+    display: flex;
     flex-direction: column;
-    line-height: 1.6rem;
-    margin: 20px;
     cursor: pointer;
-    max-height: 300px;
+    max-height: 400px;
     overflow: hidden;
-    transition: max-height 0.5s ease-in-out, opacity 0.3s ease-in-out;
+    transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out;
 }
 .experience-description-list {
     padding-right: 20px;
-    padding-top: 10px;
     list-style: disc;
     list-style-position: inside;
-    line-height: 1.2rem;
+    //line-height: 1.2rem;
     max-height: 0;
     overflow: hidden;
     opacity: 0;
-    transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out;
 }
 .experience-description-list.show {
     max-height: 500px;
