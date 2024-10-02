@@ -33,7 +33,6 @@ class Experience {
     // Add event listener to each experience-item
     experience.addEventListener("click", function () {
       description.classList.toggle("show");
-      console.log(description.classList);
     });
 
     this.description.forEach((item) => {
@@ -174,7 +173,9 @@ work.forEach((item) => {
   const experienceItem = item.createExperienceItem();
   experienceItem.classList.add("work-experience-item");
   if (numWorkItems > 2) {
-    experienceItem.style.display = "none";
+    experienceItem.style.maxHeight = "0px";
+    experienceItem.style.opacity = "0%";
+    experienceItem.style.margin = "0px";
   }
   numWorkItems++;
   workList.appendChild(experienceItem);
@@ -186,12 +187,20 @@ expandWorkButton.addEventListener("click", function () {
   this.classList.toggle("active");
   var workListArray = document.getElementsByClassName("work-experience-item");
   if (this.classList.contains("active")) {
+    // More
+    console.log("Open this thing.");
     for (var i = 0; i < workListArray.length; i++) {
-      workListArray[i].style.display = "block";
+      workListArray[i].style.maxHeight = "300px";
+      workListArray[i].style.opacity = "100%";
+      workListArray[i].style.margin = "20px";
     }
   } else {
+    // Less
+    console.log("Close this thing");
     for (var i = workListArray.length - 1; i > 2; i--) {
-      workListArray[i].style.display = "none";
+      workListArray[i].style.maxHeight = "0px";
+      workListArray[i].style.opacity = "0%";
+      workListArray[i].style.margin = "0px";
     }
   }
 });

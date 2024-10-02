@@ -68,6 +68,7 @@ nav a:hover {
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding-top: 50px;
+    padding-bottom: 50px;
 }
 .experience-list {
     padding-inline-start: 0px;
@@ -87,6 +88,9 @@ nav a:hover {
     line-height: 1.6rem;
     margin: 20px;
     cursor: pointer;
+    max-height: 300px;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out, opacity 0.3s ease-in-out;
 }
 .experience-description-list {
     padding-right: 20px;
