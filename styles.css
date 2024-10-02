@@ -41,7 +41,7 @@ nav a:hover {
     content: "Less"
 }
 .expand-button:hover {
-    background-color: lightgray;
+    opacity: 65%;
 }
 .avatar {
     display: flex;
@@ -72,6 +72,9 @@ nav a:hover {
 .experience-list {
     padding-inline-start: 0px;
     list-style: none;
+}
+.experience-item-heading:hover {
+    opacity: 65%;
 }
 .education-experience-item {
     flex-direction: column;

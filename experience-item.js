@@ -18,15 +18,10 @@ class Experience {
 
   createExperienceItem() {
     const experience = document.createElement("li");
-    // experience.classList.add("experience-item");
 
-    // Add event listener to each experience-item
-    experience.addEventListener("click", function () {
-      description.classList.toggle("show");
-      console.log(description.classList);
-    });
-
-    experience.innerHTML = `
+    const heading = document.createElement("div");
+    heading.classList.add("experience-item-heading");
+    heading.innerHTML = `
       <h3>${this.company}, <span style="font-weight:normal;">${this.location}</span></h3>
       <h3><span style="font-weight:normal;font-style:italic">${this.title}</span></h3>
       <p1>${this.start_date} to ${this.end_date}</p1>
@@ -35,6 +30,12 @@ class Experience {
     var description = document.createElement("ul");
     description.classList.add("experience-description-list");
 
+    // Add event listener to each experience-item
+    experience.addEventListener("click", function () {
+      description.classList.toggle("show");
+      console.log(description.classList);
+    });
+
     this.description.forEach((item) => {
       var desc = document.createElement("li");
       desc.classList.add("experience-description-item");
@@ -42,6 +43,7 @@ class Experience {
       description.appendChild(desc);
     });
 
+    experience.appendChild(heading);
     experience.appendChild(description);
 
     return experience;
