@@ -30,7 +30,7 @@ nav a:hover {
     padding-top: 8px;
     background-color: white;
     color: black;
-    border: 1px solid black;
+    border: 2px solid black;
     font-style: italic;
     cursor: pointer;
 }

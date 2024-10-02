@@ -161,12 +161,18 @@ education.forEach((item) => {
   educationList.appendChild(item.createExperienceItem());
 });
 
-// FIll work column
+// Fill work column
 const workContainer = document.getElementById("work-container");
 const workList = document.createElement("ul");
 workList.classList.add("experience-list");
+var numItems = 0;
 work.forEach((item) => {
-  workList.appendChild(item.createExperienceItem());
+  const experienceItem = item.createExperienceItem();
+  workList.appendChild(experienceItem);
+  if (numItems >= 3) {
+    experienceItem.style.display = "none";
+  }
+  numItems++;
 });
 
 document.getElementById("education-container").appendChild(educationList);
