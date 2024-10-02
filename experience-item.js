@@ -18,7 +18,7 @@ class Experience {
 
   createExperienceItem() {
     const experience = document.createElement("li");
-    experience.classList.add("experience-item");
+    // experience.classList.add("experience-item");
 
     // Add event listener to each experience-item
     experience.addEventListener("click", function () {
@@ -155,24 +155,43 @@ const work = [
 
 // Fill education column
 const educationContainer = document.getElementById("education-container");
-const educationList = document.createElement("ul");
+var educationList = document.createElement("ul");
 educationList.classList.add("experience-list");
 education.forEach((item) => {
-  educationList.appendChild(item.createExperienceItem());
+  const experienceItem = item.createExperienceItem();
+  experienceItem.classList.add("education-experience-item");
+  educationList.appendChild(experienceItem);
 });
 
 // Fill work column
 const workContainer = document.getElementById("work-container");
-const workList = document.createElement("ul");
+var workList = document.createElement("ul");
 workList.classList.add("experience-list");
-var numItems = 0;
+var numWorkItems = 0;
 work.forEach((item) => {
   const experienceItem = item.createExperienceItem();
-  workList.appendChild(experienceItem);
-  if (numItems >= 3) {
+  experienceItem.classList.add("work-experience-item");
+  if (numWorkItems > 2) {
     experienceItem.style.display = "none";
   }
-  numItems++;
+  numWorkItems++;
+  workList.appendChild(experienceItem);
+});
+
+// Make expand-work-button work
+var expandWorkButton = document.getElementById("expand-work-button");
+expandWorkButton.addEventListener("click", function () {
+  this.classList.toggle("active");
+  var workListArray = document.getElementsByClassName("work-experience-item");
+  if (this.classList.contains("active")) {
+    for (var i = 0; i < workListArray.length; i++) {
+      workListArray[i].style.display = "block";
+    }
+  } else {
+    for (var i = workListArray.length - 1; i > 2; i--) {
+      workListArray[i].style.display = "none";
+    }
+  }
 });
 
 document.getElementById("education-container").appendChild(educationList);

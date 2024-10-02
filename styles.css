@@ -34,7 +34,13 @@ nav a:hover {
     font-style: italic;
     cursor: pointer;
 }
-.active,.expand-button:hover {
+.expand-button:after {
+    content: "More"
+}
+.expand-button.active:after {
+    content: "Less"
+}
+.expand-button:hover {
     background-color: lightgray;
 }
 .avatar {
@@ -67,7 +73,13 @@ nav a:hover {
     padding-inline-start: 0px;
     list-style: none;
 }
-.experience-item {
+.education-experience-item {
+    flex-direction: column;
+    line-height: 1.6rem;
+    margin: 20px;
+    cursor: pointer;
+}
+.work-experience-item {
     flex-direction: column;
     line-height: 1.6rem;
     margin: 20px;
