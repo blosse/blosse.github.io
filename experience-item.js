@@ -196,14 +196,15 @@ expandWorkButton.addEventListener("click", function () {
     console.log("Open this thing.");
     for (var i = 0; i < workListArray.length; i++) {
       workListArray[i].style.maxHeight = "300px";
-      workListArray[i].style.opacity = "100%";
+      workListArray[i].style.opacity = "1";
     }
+    expandWorkButton.scrollIntoView({ behavior: "smooth", block: "nearest" });
   } else {
     // Less
     console.log("Close this thing");
     for (var i = workListArray.length - 1; i > 2; i--) {
       workListArray[i].style.maxHeight = "0px";
-      workListArray[i].style.opacity = "0%";
+      workListArray[i].style.opacity = "0";
     }
   }
 });
