@@ -221,7 +221,7 @@ expandAboutButton.addEventListener("click", function () {
   var about = document.getElementById("about-long");
   if (this.classList.contains("active")) {
     about.style.maxHeight = "500px";
-    about.style.opacity = "100%";
+    about.style.opacity = "1";
     setTimeout(() => {
       document
         .getElementById("about-container")

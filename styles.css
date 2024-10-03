@@ -10,7 +10,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 10px;
+    margin: 1rem ;
 }
 nav a {
     text-decoration: none;
@@ -19,7 +19,35 @@ nav a {
     font-style: italic;
 }
 nav a:hover {
-    color: darkgray;
+    opacity: 65%;
+    cursor: pointer;
+}
+.nav-items {
+   display: flex;
+   flex-direction: row;
+}
+.nav-items-expanded {
+    display: flex;
+    flex-direction: row;
+    max-width: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-width 0.4s ease-in-out, opacity 0.4s ease-in-out;
+}
+.text-button {
+    background: none;
+    border: none;
+    color: inherit;
+    font-style: italic;
+    cursor: pointer;
+    padding: 0;
+    font-size: inherit;
+}
+.text-button:hover {
+   opacity: 65%;
+}
+.text-button.active {
+    // Should prop put something here
 }
 .expand-button {
     display: flex;
