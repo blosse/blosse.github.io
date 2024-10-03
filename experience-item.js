@@ -17,7 +17,10 @@ class Experience {
   }
 
   createExperienceItem() {
-    const experience = document.createElement("li");
+    const experience = document.createElement("div");
+
+    const experiencePadding = document.createElement("div");
+    experiencePadding.classList.add("experience-padding");
 
     const heading = document.createElement("div");
     heading.classList.add("experience-item-heading");
@@ -42,8 +45,9 @@ class Experience {
       description.appendChild(desc);
     });
 
-    experience.appendChild(heading);
-    experience.appendChild(description);
+    experiencePadding.appendChild(heading);
+    experiencePadding.appendChild(description);
+    experience.appendChild(experiencePadding);
 
     return experience;
   }
@@ -155,9 +159,7 @@ const work = [
 ];
 
 // Fill education column
-const educationContainer = document.getElementById("education-container");
-var educationList = document.createElement("ul");
-educationList.classList.add("experience-list");
+const educationList = document.getElementById("education-item-container");
 education.forEach((item) => {
   const experienceItem = item.createExperienceItem();
   experienceItem.classList.add("education-experience-item");
@@ -165,9 +167,7 @@ education.forEach((item) => {
 });
 
 // Fill work column
-const workContainer = document.getElementById("work-container");
-var workList = document.createElement("ul");
-workList.classList.add("experience-list");
+const workList = document.getElementById("work-item-container");
 var numWorkItems = 0;
 work.forEach((item) => {
   const experienceItem = item.createExperienceItem();
@@ -202,5 +202,5 @@ expandWorkButton.addEventListener("click", function () {
   }
 });
 
-document.getElementById("education-item-container").appendChild(educationList);
-document.getElementById("work-item-container").appendChild(workList);
+// document.getElementById("education-item-container").appendChild(educationList);
+// document.getElementById("work-item-container").appendChild(workList);
