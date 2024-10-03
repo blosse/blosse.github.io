@@ -92,9 +92,6 @@ nav a:hover {
     justify-content: center;
     align-items: center;
 }
-.about-short {
-// Empty whoops
-}
 .about-long {
     display: block;
     overflow: hidden;
