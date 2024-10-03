@@ -26,14 +26,6 @@ nav a:hover {
    display: flex;
    flex-direction: row;
 }
-.nav-items-expanded {
-    display: flex;
-    flex-direction: row;
-    max-width: 0;
-    opacity: 0;
-    overflow: hidden;
-    transition: max-width 0.4s ease-in-out, opacity 0.4s ease-in-out;
-}
 .text-button {
     background: none;
     border: none;
