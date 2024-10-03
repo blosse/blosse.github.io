@@ -158,11 +158,11 @@ const work = [
   ),
 ];
 
-const aboutLong =
-  "I am a 29 year old, recent graduate from the computer science program at Chalmers Technical University in Göteborg, Sweden and I have recently relocated from Sweden to Lisboa together with my fiancée. I like to describe myself as calm, down-to-earh and solution oriented. I am particularily interested in the fields of embedded systems and computer graphics. However, I have recently started diving into front-end development and found it to be very rewarding. I am always eager to learn and excited about exploring different fields within software development! I equally enjoy digging down into a problem by myself as I do working in a team to find the perfect solution. I find that I do my best work in environments that allow for both. In my free time I enjoy music, photography, running and snowboarding.";
+const aboutShort =
+  "Hey! My name is Titus, I am software engineer from Sweden, now living in Lisbon. Hire me!";
 
-// Fill about section
-// TODO: Add "more" button to expand bio
+const aboutLong =
+  "<br>I am a 29 year old, recent graduate from the computer science program at Chalmers Technical University in Göteborg, Sweden and I have recently relocated from Sweden to Lisboa together with my fiancée. I like to describe myself as calm, down-to-earh and solution oriented.<br>I am particularily interested in the fields of embedded systems and computer graphics. However, I have recently started diving into front-end development and found it to be very rewarding. I am always eager to learn and excited about exploring different fields within software development! I equally enjoy digging down into a problem by myself as I do working in a team to find the perfect solution. I find that I do my best work in environments that allow for both.<br>In my free time I enjoy music, photography, running and snowboarding.";
 
 // Fill education section
 const educationList = document.getElementById("education-item-container");
@@ -205,5 +205,19 @@ expandWorkButton.addEventListener("click", function () {
       workListArray[i].style.maxHeight = "0px";
       workListArray[i].style.opacity = "0%";
     }
+  }
+});
+
+// Make expand-about button work
+var expandAboutButton = document.getElementById("expand-about-button");
+expandAboutButton.addEventListener("click", function () {
+  this.classList.toggle("active");
+  var about = document.getElementById("about-long");
+  if (this.classList.contains("active")) {
+    about.style.maxHeight = "500px";
+    about.style.opacity = "100%";
+  } else {
+    about.style.maxHeight = "0px";
+    about.style.opacity = "0%";
   }
 });
