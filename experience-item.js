@@ -198,7 +198,12 @@ expandWorkButton.addEventListener("click", function () {
       workListArray[i].style.maxHeight = "300px";
       workListArray[i].style.opacity = "1";
     }
-    expandWorkButton.scrollIntoView({ behavior: "smooth", block: "nearest" });
+    setTimeout(() => {
+      console.log("Scroll!");
+      document
+        .getElementById("work-container")
+        .scrollIntoView({ behavior: "smooth", block: "center" });
+    }, 350);
   } else {
     // Less
     console.log("Close this thing");
@@ -217,6 +222,11 @@ expandAboutButton.addEventListener("click", function () {
   if (this.classList.contains("active")) {
     about.style.maxHeight = "500px";
     about.style.opacity = "100%";
+    setTimeout(() => {
+      document
+        .getElementById("about-container")
+        .scrollIntoView({ behavior: "smooth", block: "center" });
+    }, 450);
   } else {
     about.style.maxHeight = "0px";
     about.style.opacity = "0%";
