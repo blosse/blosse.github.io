@@ -71,20 +71,27 @@ nav a:hover {
 .experience-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding-top: 50px;
-    padding-bottom: 50px;
 }
-.work-container {
+.work-column {
     display: flex;
     flex-direction: column;
     line-height: 1.8;
     justify-content: center;
     align-items: center;
 }
-.education-container {
+.education-about-column {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     line-height: 1.8;
+}
+.about-container {
+    margin-bottom: 1.6em;
+}
+.about-p {
+    padding-right: 8em;
+    padding-left: 8em;
 }
 .experience-padding {
     padding: 0.6em;
@@ -95,20 +102,20 @@ nav a:hover {
 .education-experience-item {
     display: flex;
     flex-direction: column;
-    // padding: 0.6em;
     cursor: pointer;
     line-height: 1.6;
 }
 .work-experience-item {
     display: flex;
     flex-direction: column;
-    // padding: 0.6em;
     cursor: pointer;
     max-height: 400px;
     overflow: hidden;
     transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out;
 }
 .experience-description-list {
+    display: flex;
+    flex-direction: column;
     padding-right: 20px;
     list-style: disc;
     list-style-position: inside;
@@ -124,4 +131,7 @@ nav a:hover {
 }
 .experience-description-item {
     padding: 5px;
+}
+footer {
+    min-height: 1rem;
 }

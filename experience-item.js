@@ -158,7 +158,13 @@ const work = [
   ),
 ];
 
-// Fill education column
+const aboutLong =
+  "I am a 29 year old, recent graduate from the computer science program at Chalmers Technical University in Göteborg, Sweden and I have recently relocated from Sweden to Lisboa together with my fiancée. I like to describe myself as calm, down-to-earh and solution oriented. I am particularily interested in the fields of embedded systems and computer graphics. However, I have recently started diving into front-end development and found it to be very rewarding. I am always eager to learn and excited about exploring different fields within software development! I equally enjoy digging down into a problem by myself as I do working in a team to find the perfect solution. I find that I do my best work in environments that allow for both. In my free time I enjoy music, photography, running and snowboarding.";
+
+// Fill about section
+// TODO: Add "more" button to expand bio
+
+// Fill education section
 const educationList = document.getElementById("education-item-container");
 education.forEach((item) => {
   const experienceItem = item.createExperienceItem();
@@ -166,7 +172,7 @@ education.forEach((item) => {
   educationList.appendChild(experienceItem);
 });
 
-// Fill work column
+// Fill work section
 const workList = document.getElementById("work-item-container");
 var numWorkItems = 0;
 work.forEach((item) => {
@@ -201,6 +207,3 @@ expandWorkButton.addEventListener("click", function () {
     }
   }
 });
-
-// document.getElementById("education-item-container").appendChild(educationList);
-// document.getElementById("work-item-container").appendChild(workList);
