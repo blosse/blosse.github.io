@@ -178,7 +178,7 @@ var numWorkItems = 0;
 work.forEach((item) => {
   const experienceItem = item.createExperienceItem();
   experienceItem.classList.add("work-experience-item");
-  if (numWorkItems > 2) {
+  if (numWorkItems > 1) {
     experienceItem.style.maxHeight = "0px";
     experienceItem.style.opacity = "0%";
   }
@@ -230,5 +230,24 @@ expandAboutButton.addEventListener("click", function () {
   } else {
     about.style.maxHeight = "0px";
     about.style.opacity = "0%";
+  }
+});
+
+// Make expand-skills button work
+var expandSkillsButton = document.getElementById("expand-skills-button");
+expandSkillsButton.addEventListener("click", function () {
+  this.classList.toggle("active");
+  var skills = document.getElementById("skills-long");
+  if (this.classList.contains("active")) {
+    skills.style.maxHeight = "500px";
+    skills.style.opacity = "1";
+    setTimeout(() => {
+      document
+        .getElementById("skills-container")
+        .scrollIntoView({ behavior: "smooth", block: "center" });
+    }, 450);
+  } else {
+    skills.style.maxHeight = "0px";
+    skills.style.opacity = "0%";
   }
 });

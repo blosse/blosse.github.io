@@ -4,7 +4,7 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Titus Blosses Crappy Resumé Page</title>
-        <link rel="icon" type="image/png" href="favicon.png" />
+        <link rel="icon" type="image/png" href="images/favicon.png" />
         <link rel="stylesheet" href="styles.css" />
     </head>
     <body>
@@ -21,7 +21,7 @@
                 </div>
             </div>
             <div class="nav-items" id="nav-items">
-                <a href="mailto:titus.blosse@gmail.com">Email</a>
+                <a class="email" href="mailto:titus.blosse@gmail.com"> Email</a>
                 <a href="https://linkedin.com/in/titusblosse" target="_blank"
                     >LinkedIn</a
                 >
@@ -78,14 +78,49 @@
                     <h1>Education</h1>
                     <div id="education-item-container"></div>
                 </div>
-                <div class="work-column" id="work-container">
-                    <h1>Work Experience</h1>
-                    <div id="work-item-container"></div>
-                    <button
-                        type="button"
-                        class="expand-button"
-                        id="expand-work-button"
-                    ></button>
+                <div class="work-skills-column" id="work-skills-container">
+                    <div class="work-container" id="work-container">
+                        <h1>Work Experience</h1>
+                        <div id="work-item-container"></div>
+                        <button
+                            type="button"
+                            class="expand-button"
+                            id="expand-work-button"
+                        ></button>
+                    </div>
+                    <div class="about-container" id="skills-container">
+                        <h1>Skills</h1>
+                        <div class="about-padding">
+                            <p>
+                                I am most familiar with object oriented
+                                programming and embedded programming. My top
+                                programming languages are C++, C and Python.
+                            </p>
+                            <div class="about-long" id="skills-long">
+                                <p>
+                                    <br />
+                                    Through education, work and
+                                    free-time-tinkering I have also gathered
+                                    some lesser experience with the following
+                                    programming languages: Go, Kotlin, Java,
+                                    JavaScript, HTML, CSS, SQL, Bash, Matlab and
+                                    Assembly-language.
+                                    <br /><br />
+                                    Through education, work and
+                                    free-time-tinkering I have also worked with
+                                    the following technologies, frameworks and
+                                    libraries: Linux, Git, Scrum, Agile, Docker,
+                                    OpenMP, OpenGL, Make, CMake, PyTorch, NumPy,
+                                    REST and Jetpack Compose.
+                                </p>
+                            </div>
+                        </div>
+                        <button
+                            type="button"
+                            class="expand-button"
+                            id="expand-skills-button"
+                        ></button>
+                    </div>
                 </div>
                 <script src="experience-item.js"></script>
             </div>
