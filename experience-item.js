@@ -1,18 +1,10 @@
 // This file holds the class for an experience-item
 class Experience {
-  constructor(
-    company,
-    location,
-    title,
-    start_date,
-    end_date,
-    description = [],
-  ) {
+  constructor(company, location, title, duration, description = []) {
     this.company = company;
     this.location = location;
     this.title = title;
-    this.start_date = start_date;
-    this.end_date = end_date;
+    this.duration = duration;
     this.description = description;
   }
 
@@ -27,7 +19,7 @@ class Experience {
     heading.innerHTML = `
       <h3>${this.company}, <span style="font-weight:normal;">${this.location}</span></h3>
       <h3><span style="font-weight:normal;font-style:italic">${this.title}</span></h3>
-      <p1>${this.start_date} to ${this.end_date}</p1>
+      <p1>${this.duration}</p1>
       `;
 
     var description = document.createElement("ul");
@@ -59,8 +51,7 @@ const education = [
     "Chalmers University of Technology",
     "Gothenburg",
     "Master's Degree in High Performance Computer Systems",
-    "September 2022",
-    "June 2024",
+    "September 2022 to June 2024",
     [
       "Master’s program with a focus on high performance computers systems where I took courses on Parallel Programming, Computer Graphics, Computer Architecture, Sustainable Computing and Real-time systems.",
       "Master’s thesis on optimizing message distribution for Bluetooth mesh gateways with the purpose of improving throughput and energy efficiency.",
@@ -71,8 +62,7 @@ const education = [
     "Chalmers University of Technology",
     "Gothenburg",
     "Bachelor's Degree in Computer Science",
-    "September 2019",
-    "June 2022",
+    "September 2019 to June 2022",
     [
       "Bachelor’s program in the field of computer science and engineering. Wide selection of courses on Algorithms and Data Structures, Computer Architecture and Embedded Systems, Maths, Computer Networks, Object Oriented Programming among others.",
       "Bacherlor’s thesis on exploring musical interpretations of images using AI.",
@@ -87,8 +77,7 @@ const work = [
     "Volvo Group Truck Technology",
     "Gothenburg",
     "Summer internship",
-    "June 2024",
-    "August 2024",
+    "June to August, 2023 and 2024",
     [
       "Internship at the department for vehicle motion management at Volvo Trucks during the two summers of my masters.",
       "Development of a user interface displayed to the driver during automatic coupling of truck and trailer.",
@@ -101,8 +90,7 @@ const work = [
     "SGS Studenbostäder",
     "Gothenburg",
     "Groundskeeper / Janitor",
-    "June 2022",
-    "September 2022",
+    "June 2022 to September 2022",
     [
       "Maintaining the outdoor and indoor residential areas at SGS Student Housing in Göteborg.",
       "Gardening and lawn care.",
@@ -113,8 +101,7 @@ const work = [
     "Track Recycle",
     "Gothenburg",
     "Shop Assistant",
-    "January 2022",
-    "March 2022",
+    "January 2022 to March 2022",
     [
       "Shop assistant at a small store selling second hand outdoor equipment.",
       "Customer service.",
@@ -124,8 +111,7 @@ const work = [
     "Chalmers Golf Club",
     "Gothenburg",
     "Greenkeeper",
-    "May 2019",
-    "August 2019",
+    "May to August, 2019 and 2020",
     [
       "Maintaing the golf course at Chalmers Golf Club in Landvetter.",
       "Lawn care and irrigation.",
@@ -137,8 +123,7 @@ const work = [
     "Skistar",
     "Sälen",
     "Ski Lift Attendant, Snow Maker, Terrain Park Crew",
-    "December 2015",
-    "April 2019",
+    "December 2015 to April 2019",
     [
       "Ski lift attendant helping skiers ride the ski lifts safely in all weather conditions.",
       "Problem solving and teamwork as me and my colleagues worked around the clock in the pre-season to make snow across the resort.",
@@ -149,8 +134,7 @@ const work = [
     "TeliaSonera",
     "Norrköping",
     "Technical Support",
-    "January 2015",
-    "October 2017",
+    "January 2015 to October 2017",
     [
       "Technical support for small and medium sized businesses at TeliaSonera, one of Sweden’s major telecoms.",
       "Valuable work where I learned alot, both from a technical point of view but also regarding how to meet and work with people.",
