@@ -17,17 +17,16 @@ nav a {
     color: black;
     padding: 0 2rem;
     font-style: italic;
+    transition: color 0.4s ease;
 }
 nav a:hover {
-    opacity: 65%;
+    color: #0200F6;
     cursor: pointer;
 }
 .nav-items {
    display: flex;
    flex-direction: row;
-}
-.email:hover {
-
+   justify-content: space-evenly;
 }
 .text-button {
     background: none;
@@ -39,7 +38,7 @@ nav a:hover {
     font-size: inherit;
 }
 .text-button:hover {
-   opacity: 65%;
+   color: #0200F6;
 }
 .text-button.active {
     // Should prop put something here
@@ -67,6 +66,7 @@ nav a:hover {
     border: 2px solid black;
     font-style: italic;
     cursor: pointer;
+    transition: color 0.4s ease, border-color 0.4s ease;
 }
 .expand-button:after {
     content: "More"
@@ -75,7 +75,8 @@ nav a:hover {
     content: "Less"
 }
 .expand-button:hover {
-    opacity: 65%;
+    color: #0200F6;
+    border-color: #0200F6;
 }
 .avatar {
     display: flex;
@@ -146,8 +147,11 @@ nav a:hover {
 .experience-padding {
     padding: 0.6em;
 }
+.experience-item-heading {
+    transition: color 0.4s ease;
+}
 .experience-item-heading:hover {
-    opacity: 65%;
+    color: #0200F6;
 }
 .education-experience-item {
     display: flex;
@@ -185,4 +189,77 @@ nav a:hover {
 }
 footer {
     min-height: 1rem;
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    nav a {
+        padding: 0.5rem 0; /* Adjust padding for smaller screens */
+    }
+
+    .nav-items {
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+    }
+
+    .expand-button {
+        max-width: 100%; /* Full width on small screens */
+        padding: 10px 30px;
+    }
+
+    .avatar {
+        font-size: 2rem; /* Smaller avatar text */
+    }
+
+    .circular-image {
+        height: 100px; /* Smaller image for mobile */
+        width: 100px;
+    }
+
+    .about-padding {
+        padding-right: 2em;
+        padding-left: 2em;
+    }
+
+    .experience-description-padding {
+        padding: 0.0em 2em; /* Adjust padding */
+    }
+
+    .experience-container {
+        display: flex;
+        flex-direction: column;
+    }
+    .work-container,
+    .about-container {
+        flex-direction: column; /* Stack items vertically */
+    }
+
+    .work-skills-column {
+        align-items: center; /* Center align columns */
+        line-height: 1.4; /* Adjust line height for better readability */
+    }
+    .education-about-column {
+        align-items: center; /* Center align columns */
+        line-height: 1.4; /* Adjust line height for better readability */
+    }
+
+    .name-container {
+        align-items: center; /* Center name on mobile */
+    }
+
+    .experience-description {
+        padding: 0.5em 0; /* Adjust description padding */
+    }
+    .email::before {
+       content: "";
+       opacity: 0;
+       transition: opacity 0.3s ease-in;
+    }
+    .email:hover::before {
+        opacity: 1;
+    }
 }
