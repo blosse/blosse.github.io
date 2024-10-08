@@ -214,9 +214,7 @@ footer {
     }
 
     .nav-items {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
+        width: clamp(20vw, 60vw, 98vw);
     }
 
     .expand-button {
