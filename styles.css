@@ -15,7 +15,7 @@ nav {
 nav a {
     text-decoration: none;
     color: black;
-    padding: 0 2rem;
+    // padding: 0 2rem;
     font-style: italic;
     transition: color 0.4s ease;
 }
@@ -25,6 +25,7 @@ nav a:hover {
 }
 .nav-items {
    display: flex;
+   width: clamp(20vw, 60vw, 80vw);
    flex-direction: row;
    justify-content: space-evenly;
 }
@@ -44,7 +45,7 @@ nav a:hover {
     // Should prop put something here
 }
 .email::before {
-   content: "";
+   content: "titus.blosse@gmail.com \2190 ";
    opacity: 0;
    transition: opacity 0.3s ease-in;
 }
@@ -198,12 +199,13 @@ footer {
     }
 
     nav a {
-        padding-top: 0.7rem; /* Adjust padding for smaller screens */
+        //padding-top: 0.7rem; /* Adjust padding for smaller screens */
         //padding-bottom: 0.7rem; /* Adjust padding for smaller screens */
     }
 
     .nav-items {
         display: flex;
+        flex-direction: row;
         justify-content: space-evenly;
     }
 
@@ -261,6 +263,7 @@ footer {
        transition: opacity 0.3s ease-in;
     }
     .email:hover::before {
+        content: "";
         opacity: 1;
     }
 }
