@@ -214,7 +214,7 @@ footer {
     }
 
     .nav-items {
-        width: clamp(20vw, 60vw, 98vw);
+        width: clamp(20vw, 95vw, 100vw);
     }
 
     .expand-button {
