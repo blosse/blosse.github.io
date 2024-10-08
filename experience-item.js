@@ -49,7 +49,7 @@ const education = [
     "Gothenburg",
     "Master's Degree in High Performance Computer Systems",
     "September 2022 to June 2024",
-    "Master’s program with a focus on high performance computers systems where I took courses on Parallel Programming, Computer Graphics, Computer Architecture, Sustainable Computing and Real-time systems among others.\n\nI wrote my Master’s thesis on optimizing message distribution for Bluetooth mesh gateways with the purpose of improving throughput towards integrations such as Apple HomeKit and Google Home and to improve the overall energy efficiency of the gateways.\n\nThe thesis was written at Plejd AB and revolved around designing and implementing a message distribution service for an embedded Linux  micro-service system. The service was implemented in C.",
+    "Master’s program with a focus on high performance computers systems where I took courses on Parallel Programming, Computer Graphics, Computer Architecture, Sustainable Computing and Real-time systems among others.\n\nI wrote my Master’s thesis on optimizing message distribution for Bluetooth mesh gateways with the purpose of improving throughput towards integrations such as Apple HomeKit and Google Home and to improve the overall energy efficiency of the gateways.",
   ),
   new Experience(
     "Chalmers University of Technology",
@@ -68,6 +68,13 @@ const work = [
     "Summer internship",
     "June to August, 2023 and 2024",
     "Internship  at the department for vehicle motion management at Volvo Trucks during the two summers of my Master's. The first summer I was tasked with implementation of a load balancing algorithm and an accompanying graphical interface in Python. The second summer I was tasked with development of a prototype user interface that is to be displayed to the driver during automatic coupling of truck and trailer. The interface was developed as an Android application using Kotlin and Jetpack Compose.",
+  ),
+  new Experience(
+    "Plejd AB",
+    "Gothenburg",
+    "Master's Thesis Worker",
+    "January 2024 to June 2024",
+    "I wrote my master’s thesis as a member of the integrations team at Plejd. The team focuses on developing the integrations between Plejd products and smart home apps such as Alexa, Google Home and Apple HomeKit. My work revolved around designing and implementing a message distribution service for an embedded Linux micro-service system. The service was implemented in C. As part of the team I participated in all Agile ceremonies.",
   ),
   new Experience(
     "SGS Studenbostäder",
