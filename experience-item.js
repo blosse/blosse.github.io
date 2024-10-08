@@ -65,7 +65,7 @@ const work = [
   new Experience(
     "Volvo Group Truck Technology",
     "Gothenburg",
-    "Summer internship",
+    "Summer Internship",
     "June to August, 2023 and 2024",
     "Internship  at the department for vehicle motion management at Volvo Trucks during the two summers of my Master's. The first summer I was tasked with implementation of a load balancing algorithm and an accompanying graphical interface in Python. The second summer I was tasked with development of a prototype user interface that is to be displayed to the driver during automatic coupling of truck and trailer. The interface was developed as an Android application using Kotlin and Jetpack Compose.",
   ),
