@@ -48,12 +48,13 @@ nav a {
     // Should prop put something here
 }
 .email::before {
-   content: "titus.blosse@gmail.com \2190 ";
+   content: "";
    opacity: 0;
    transition: opacity 0.3s ease-in;
 }
 @media (hover: hover) {
     .email:hover::before {
+        content: "titus.blosse@gmail.com \2190 ";
         opacity: 1;
     }
 }
@@ -203,17 +204,17 @@ footer {
 
 @media (max-width: 768px) {
     nav {
-        flex-direction: row;
-        justify-content: space-evenly;
+        flex-direction: column;
     }
 
     nav a {
-        padding: 0.5rem 0; /* Adjust padding for smaller screens */
+        padding-top: 0.7rem; /* Adjust padding for smaller screens */
+        //padding-bottom: 0.7rem; /* Adjust padding for smaller screens */
     }
 
     .nav-items {
-        display: grid;
-        grid-template-columns: 1fr 1fr ;
+        display: flex;
+        justify-content: space-evenly;
     }
 
     .expand-button {
