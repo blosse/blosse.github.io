@@ -17,9 +17,10 @@ nav a {
     color: black;
     padding: 0 2rem;
     font-style: italic;
+    transition: color 0.4s ease;
 }
 nav a:hover {
-    opacity: 65%;
+    color: #0200F6;
     cursor: pointer;
 }
 .nav-items {
@@ -39,7 +40,7 @@ nav a:hover {
     font-size: inherit;
 }
 .text-button:hover {
-   opacity: 65%;
+   color: #0200F6;
 }
 .text-button.active {
     // Should prop put something here
@@ -67,6 +68,7 @@ nav a:hover {
     border: 2px solid black;
     font-style: italic;
     cursor: pointer;
+    transition: color 0.4s ease, border-color 0.4s ease;
 }
 .expand-button:after {
     content: "More"
@@ -75,7 +77,8 @@ nav a:hover {
     content: "Less"
 }
 .expand-button:hover {
-    opacity: 65%;
+    color: #0200F6;
+    border-color: #0200F6;
 }
 .avatar {
     display: flex;
@@ -146,8 +149,11 @@ nav a:hover {
 .experience-padding {
     padding: 0.6em;
 }
+.experience-item-heading {
+    transition: color 0.4s ease;
+}
 .experience-item-heading:hover {
-    opacity: 65%;
+    color: #0200F6;
 }
 .education-experience-item {
     display: flex;
