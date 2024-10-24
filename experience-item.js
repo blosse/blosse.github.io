@@ -170,8 +170,8 @@ expandWorkButton.addEventListener("click", function () {
 });
 
 // Make expand-about button work
-var expandAboutButton = document.getElementById("expand-about-button");
-expandAboutButton.addEventListener("click", function () {
+var aboutContainer = document.getElementById("about-container");
+aboutContainer.addEventListener("click", function () {
   this.classList.toggle("active");
   var about = document.getElementById("about-long");
   if (this.classList.contains("active")) {
@@ -189,8 +189,8 @@ expandAboutButton.addEventListener("click", function () {
 });
 
 // Make expand-skills button work
-var expandSkillsButton = document.getElementById("expand-skills-button");
-expandSkillsButton.addEventListener("click", function () {
+var skillsContainer = document.getElementById("skills-container");
+skillsContainer.addEventListener("click", function () {
   this.classList.toggle("active");
   var skills = document.getElementById("skills-long");
   if (this.classList.contains("active")) {
