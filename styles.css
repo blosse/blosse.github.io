@@ -17,7 +17,7 @@ nav a {
     color: black;
     // padding: 0 2rem;
     font-style: italic;
-    transition: color 0.4s ease;
+    transition: color 0.3s ease;
 }
 @media (hover: hover) {
     nav a:hover {
@@ -74,7 +74,7 @@ nav a {
     border: 2px solid black;
     font-style: italic;
     cursor: pointer;
-    transition: color 0.4s ease, border-color 0.4s ease;
+    transition: color 0.3s ease, border-color 0.3s ease;
 }
 .expand-button:after {
     content: "More"
@@ -153,12 +153,13 @@ nav a {
     padding-left: 8em;
     padding-bottom: 0.6em;
     padding-top: 0.6em;
+    transition: color 0.3s ease;
+}
+.about-padding:hover {
+    color: #0200F6;
 }
 .experience-padding {
     padding: 0.6em;
-}
-.experience-item-heading {
-    transition: color 0.4s ease;
 }
 @media (hover: hover) {
     .experience-item-heading:hover {
@@ -170,6 +171,10 @@ nav a {
     flex-direction: column;
     cursor: pointer;
     line-height: 1.6;
+    transition: color 0.3s ease-in-out;
+}
+.education-experience-item:hover {
+    color: #0200F6;
 }
 .work-experience-item {
     display: flex;
@@ -177,7 +182,10 @@ nav a {
     cursor: pointer;
     max-height: 400px;
     overflow: hidden;
-    transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    transition: color 0.3s ease-in-out, max-height 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+.work-experience-item:hover {
+    color: #0200F6;
 }
 .experience-description-padding {
     padding: 0.0em 6em; //TODO: Fix this padding
@@ -195,6 +203,9 @@ nav a {
 .experience-description.show {
     max-height: 500px;
     opacity: 1;
+}
+.experience-description:hover {
+    color: #0200F6;
 }
 .experience-description-item {
     padding: 5px;
