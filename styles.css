@@ -153,42 +153,49 @@ nav a {
     padding-left: 8em;
     padding-bottom: 0.6em;
     padding-top: 0.6em;
+}
+.about-padding p {
     transition: color 0.3s ease;
 }
-.about-padding:hover {
+.about-padding p:hover {
     color: #0200F6;
+    cursor: pointer;
 }
 .experience-padding {
     padding: 0.6em;
 }
-@media (hover: hover) {
-    .experience-item-heading:hover {
-        color: #0200F6;
-    }
-}
 .education-experience-item {
     display: flex;
     flex-direction: column;
-    cursor: pointer;
     line-height: 1.6;
     transition: color 0.3s ease-in-out;
-}
-.education-experience-item:hover {
-    color: #0200F6;
 }
 .work-experience-item {
     display: flex;
     flex-direction: column;
-    cursor: pointer;
     max-height: 400px;
     overflow: hidden;
     transition: color 0.3s ease-in-out, max-height 0.5s ease-in-out, opacity 0.5s ease-in-out;
 }
-.work-experience-item:hover {
+.experience-item-heading {
+    display: inline-block;
+    transition: color 0.3s ease-in-out;
+}
+.experience-item-heading:has(+ .experience-description:hover) {
+    cursor: pointer;
+    color: #0200F6;
+}
+.experience-item-heading:hover {
+    cursor: pointer;
+    color: #0200F6;
+}
+.experience-item-heading:hover + .experience-description-padding {
+    cursor: pointer;
     color: #0200F6;
 }
 .experience-description-padding {
     padding: 0.0em 6em; //TODO: Fix this padding
+    transition: color 0.3s ease-in-out;
 }
 .experience-description {
     display: flex;
@@ -198,14 +205,14 @@ nav a {
     max-height: 0;
     overflow: hidden;
     opacity: 0;
-    transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out, color 0.3s ease-in-out;
 }
 .experience-description.show {
     max-height: 500px;
     opacity: 1;
 }
 .experience-description:hover {
-    color: #0200F6;
+    cursor: pointer;
 }
 .experience-description-item {
     padding: 5px;

@@ -19,12 +19,12 @@ class Experience {
     heading.innerHTML = `
       <h3>${this.company}, <span style="font-weight:normal;">${this.location}</span></h3>
       <h3><span style="font-weight:normal;font-style:italic">${this.title}</span></h3>
-      <p1>${this.duration}</p1>
+      <p>${this.duration}</p>
       `;
 
     var descriptionPadding = document.createElement("div");
     descriptionPadding.classList.add("experience-description-padding");
-    var description = document.createElement("div");
+    var description = document.createElement("p");
     description.classList.add("experience-description");
     description.textContent = this.description;
 
