@@ -63,6 +63,13 @@ const education = [
 // List of work
 const work = [
   new Experience(
+    "Autodoc",
+    "Lisbon",
+    "Integration Analyst",
+    "December 2024 to ongoing",
+    "As an integration analyst at Autodoc my role is to integrate suppliers with the Autodoc system. This involves setting up SFTP communication, working together with suppliers on API-specifications, testing, creating documentation, among other tasks. The key skill in this role is communication as a large part of the work revolves around efficient communication between multiple stakeholders.",
+  ),
+  new Experience(
     "Volvo Group Truck Technology",
     "Gothenburg",
     "Summer Internship",
