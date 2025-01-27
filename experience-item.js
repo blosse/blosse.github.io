@@ -63,7 +63,7 @@ const education = [
 // List of work
 const work = [
   new Experience(
-    "Autodoc",
+    "Autodoc GmbH",
     "Lisbon",
     "Integration Analyst",
     "December 2024 to ongoing",
